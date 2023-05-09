@@ -26,6 +26,9 @@ public class VehicleConfigurator : MonoBehaviour
     [SerializeField] private GameObject[] paintableVehicleParts;
 
     [SerializeField] private Material[] paints;
+
+    [SerializeField] private int vehicleBaseValue;
+    private int vehicleCurrentValue;
     #endregion
 
     private void Start()

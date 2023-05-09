@@ -3270,7 +3270,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3ab7399117f95841be0e3331f01d74f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSensitivity: 2
+  rotSpeed: 0.5
+  framesTillDrag: 60
 --- !u!135 &1406444681
 SphereCollider:
   m_ObjectHideFlags: 0
