@@ -96,5 +96,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96f8635d8a4708b4cad6146fcb7f4fbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  paintName: Red Paint
-  paintValue: 399
+  paintName: Red
+  paintValue: 400
+  myMat: {fileID: 2100000, guid: 929f76f5419cd7348974c8be8d961a96, type: 2}

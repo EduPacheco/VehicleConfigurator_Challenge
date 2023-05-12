@@ -98,3 +98,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   paintName: Grey
   paintValue: 0
+  myMat: {fileID: 2100000, guid: 0478b65eb2d496c4db758078903d0aa2, type: 2}

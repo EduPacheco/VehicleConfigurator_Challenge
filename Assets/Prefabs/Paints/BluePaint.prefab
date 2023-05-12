@@ -97,4 +97,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paintName: Blue
-  paintValue: 299
+  paintValue: 300
+  myMat: {fileID: 2100000, guid: af3f942abde3e924482e6cd29b151f26, type: 2}

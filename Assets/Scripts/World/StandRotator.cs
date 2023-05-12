@@ -1,6 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+
+/// <summary>
+/// Rotates the vehicles stand when holding and draging with left mouse button
+/// </summary>
 
 public class StandRotator : MonoBehaviour
 {
@@ -12,10 +14,11 @@ public class StandRotator : MonoBehaviour
     private int framesCounter; 
     private bool dragable = false;
 
+    /// <summary>
+    /// If Holding LMB can drag mouse to rotate vehicle stand
+    /// </summary>
     private void Update()
     {
-        Debug.Log(dragable);
-
         if (!dragable) return;
 
         standRotation.x -= Input.GetAxis("Mouse X") * rotSpeed;
@@ -24,13 +27,17 @@ public class StandRotator : MonoBehaviour
     }
 
     #region MOUSE METHODS
+    /// <summary>
+    /// Resets drag
+    /// </summary>
     private void OnMouseDown()
     {
-        Debug.Log("Clicked");
-
         framesCounter = 0;
     }
 
+    /// <summary>
+    /// While holding LMB, start countdown, lock and hide mouse
+    /// </summary>
     private void OnMouseDrag()
     {
         if(framesCounter < framesTillDrag)
@@ -45,6 +52,9 @@ public class StandRotator : MonoBehaviour
             Cursor.lockState = CursorLockMode.Locked;
     }
 
+    /// <summary>
+    /// Unlockes mouse and cancels dragging
+    /// </summary>
     private void OnMouseUp()
     {
         dragable = false;

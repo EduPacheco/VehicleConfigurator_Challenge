@@ -97,4 +97,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paintName: Black
-  paintValue: 99
+  paintValue: 100
+  myMat: {fileID: 2100000, guid: dc7ae44a04b847044a71d7e3607584c9, type: 2}
